@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Faster+One&display=swap');
+
+* {
+    /* border: 3px solid red; */
+}
+
+#diaporama {
+  width: 100%;
+  height: 100vh;
+  background-position: center center; /* la centre de des photos est la partie que l'on voit à l'écran/ se positionne sur le centre de la photo*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: diapo 50s ease-in-out infinite;
+  transition
+}
+
+@keyframes diapo {
+  0% {
+    background-image: url(../images/1.jpg);
+  }
+  10% {
+    background-image: url(../images/2.jpg);
+  }
+  20% {
+    background-image: url(../images/3.jpg);
+  }
+  30% {
+    background-image: url(../images/4.jpg);
+  }
+  40% {
+    background-image: url(../images/5.jpg);
+  }
+  50% {
+    background-image: url(../images/6.jpg);
+  }
+  60% {
+    background-image: url(../images/7.jpg);
+  }
+  70% {
+    background-image: url(../images/8.jpg);
+  }
+  80% {
+    background-image: url(../images/9.jpg);
+  }
+  90% {
+    background-image: url(../images/10.jpg);
+  }
+  100% {
+    background-image: url(../images/11.jpg);
+  }
+}
+
+/* position: relative & bottom: 50px -> pour pouvoir positionner le titre un peu plus en hauteur */
+#title {
+    position: relative;
+    text-align: center;
+    font-family: 'Faster One', cursive;
+    font-size: 40px;
+    bottom: 50px;
+    color: white;
+}
+
+#usinput {
+    position: absolute;
+    margin-left: 55px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    text-align: center;
+    animation:  8s circleanimation infinite; /* myanimation */
+    border: none;
+    bottom: 445px;
+}
+
+/* utilisation d'un keyframes pour pouvoir créer une animation de dégradé de couleurs pour le background du cercle */
+  @keyframes circleanimation {
+      0%{background-color: #ff0066}
+      5%{background-color: #f7006e}
+      10%{background-color: #f00075}
+      15%{background-color: #e8007d}
+      20%{background-color: #e00085}
+      25%{background-color: #d9008c}
+      30%{background-color: #d10094}
+      35%{background-color: #c9009c}
+      40%{background-color: #c200a3}
+      45%{background-color: #ba00ab}
+      50%{background-color: #b200b2}
+      55%{background-color: #ab00ba}
+      60%{background-color: #a300c2}
+      65%{background-color: #9c00c9}
+      70%{background-color: #9400d1}
+      75%{background-color: #8c00d9}
+      80%{background-color: #8500e0}
+      85%{background-color: #7d00e8}
+      90%{background-color: #7500f0}
+      95%{background-color: #6e00f7}
+      100%{background-color: #6600ff}
+    }
+
+  .btnOn {
+    position: absolute;
+    bottom: 390px;
+    left: 115px;
+    width: 80px;
+    height: 40px;
+    border-radius: 40px;
+    border: none;
+  }
+
+  .container {
+    margin-top: 250px;
+    text-align: center;
+  }
+
+  /* display: inline-block pour placer les éléments du timer côte à côte */
+  .square {
+      display: inline-block;
+      opacity: 0.3;
+  }
+
+  .hour, .min, .sec {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    margin-left: 70px; /* le margin-left permet de mieux positionner les cases au centre de l'écran */
+    border: 1px solid black;
+    text-align: center; /* implémenter pour centrer le placeholder dans l'élément */
+    border: 5px solid black;
+  }
+
+  .btnOff {
+    position: absolute;
+    bottom: 80px;
+    left: 775px;
+    width: 80px;
+    height: 40px;
+    border-radius: 40px;
+    border: none;
+  }
+
+  /* .min {
+    position: relative;  
+    width: 180px;
+    height: 180px;
+    margin-left: 70px;
+    border: 1px solid black;
+  }
+
+  .sec {
+    position: relative;  
+    width: 180px;
+    height: 180px;
+    margin-left: 70px;
+    border: 1px solid black;
+  } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* @keyframes myanimation {
+    0% {background-color: red;}
+    25%{background-color:yellow;}
+    50%{background-color:green;}
+    75%{background-color:brown;}
+    100% {background-color: red;}
+  } */
