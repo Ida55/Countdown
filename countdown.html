@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>countdown project</title>
+    <link rel="stylesheet" href="css/countdown.css">
+</head>
+<body id="diaporama">  
+<div id="title">
+    <h1>My TIMER</h1>
+</div>
+    <form method="post" action="">
+        <label for="choice"></label>
+        <input type="text" id="usinput" placeholder="00">
+    </form>
+    <div class="containerbt">
+        <button class="btnOn" type="button">ON</button>
+    </div>
+    <div class="container">    <!-- div servant de conteneur pour les 3 éléments du timer (heure, minutes, secondes) eux même individuellement inséré dans une div -->
+        <div class="square">
+            <form method="post" action="" >
+                <label for="choiceH"></label>
+                <input type="text" id="timer" placeholder="00" class="hour">
+            </form>
+        </div>
+        <div class="square">
+            <form method="post" action="">
+                <label for="choiceM"></label>
+                <input type="text" id="timer" placeholder="00" class="min">
+            </form>
+        </div>
+        <div class="square">
+            <form method="post" action="">
+                <label for="choiceS"></label>
+                <input type="text" id="timer" placeholder="00" class="sec">
+            </form>
+        </div> 
+    </div>
+    <div class="containerbt">
+            <button class="btnOff" type="button">OFF</button>
+    </div>
+</body>
+<script type="text/JavaScript" src="js/countdown.js"></script>
+</html>
