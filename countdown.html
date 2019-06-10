@@ -7,38 +7,22 @@
 </head>
 <body id="diaporama">  
 <div id="title">
-    <h1>My TIMER</h1>
+    <h1>My TIMER<br></h1>
 </div>
-    <form method="post" action="">
-        <label for="choice"></label>
-        <input type="text" id="usinput" placeholder="00">
+<div id="subtitle">
+    <h4>In Minutes</h4>
+</div>
+    <form>
+        <input type="text" id="mins" name="mins" value="0" size="3" maxlength="3">
+        <div id="minutes-label" class="choice">Minutes</div> <!-- Identification du cercle dédié aux minutes -->
+        <input type="text" id="scs"  name="scs" value="0" size="2" maxlength="2">
+        <div id="seconds-label" class="choice">Seconds</div> <!-- Identification du cercle dédié aux secondes -->
+        <button type="button" id="btnOn" onclick="timerOn()">ON</button>
     </form>
-    <div class="containerbt">
-        <button class="btnOn" type="button">ON</button>
+    <div class="container">    <!-- div servant de conteneur pour les éléments du timer (minutes, secondes) eux même individuellement inséré dans une balise span -->
+            <span id="showmin">00</span>:<span id="showsec">00</span>
     </div>
-    <div class="container">    <!-- div servant de conteneur pour les 3 éléments du timer (heure, minutes, secondes) eux même individuellement inséré dans une div -->
-        <div class="square">
-            <form method="post" action="" >
-                <label for="choiceH"></label>
-                <input type="text" id="timer" placeholder="00" class="hour">
-            </form>
-        </div>
-        <div class="square">
-            <form method="post" action="">
-                <label for="choiceM"></label>
-                <input type="text" id="timer" placeholder="00" class="min">
-            </form>
-        </div>
-        <div class="square">
-            <form method="post" action="">
-                <label for="choiceS"></label>
-                <input type="text" id="timer" placeholder="00" class="sec">
-            </form>
-        </div> 
-    </div>
-    <div class="containerbt">
-            <button class="btnOff" type="button">OFF</button>
-    </div>
+        <!-- <button class="btnOff" type="button">OFF</button> -->
 </body>
 <script type="text/JavaScript" src="js/countdown.js"></script>
 </html>
