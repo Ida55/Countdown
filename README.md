@@ -1,3 +1,3 @@
 # countdown
 
-JS code courtesy of https://coursesweb.net/javascript/countdown-timer-starting-time-added-form_s2
+JS code by courtesy of https://coursesweb.net/javascript/countdown-timer-starting-time-added-form_s2
