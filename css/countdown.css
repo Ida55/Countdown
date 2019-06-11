@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Faster+One&display=swap'); 
+@import url('https://fonts.googleapis.com/css?family=Faster+One&display=swap'); /* police du titre */
 
-@import url('https://fonts.googleapis.com/css?family=Orbitron:400,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Orbitron:400,900&display=swap'); /* police du compteur */
 
-@import url('https://fonts.googleapis.com/css?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Caveat&display=swap'); /*vpolice du sous-titre */
 
-@import url('https://fonts.googleapis.com/css?family=Warnes&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Warnes&display=swap'); /* police des tags 'minutes' 'secondes' */
 
-@import url('https://fonts.googleapis.com/css?family=Seymour+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Seymour+One&display=swap'); /* police des cercles (données utilisateurs) */
 
-@import url('https://fonts.googleapis.com/css?family=Fascinate&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fascinate&display=swap'); /* police du bouton 'ON' */
 
 /* margin: 0 & padding 0 & box-sizing: border-box -> pour ajuster la taille de l'écran et éviter les débordements*/
 * {
