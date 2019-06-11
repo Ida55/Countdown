@@ -24,15 +24,15 @@ function timerOn() {
       document.getElementById('btnOn').setAttribute('disabled', 'disabled');     // désactive le bouton 'ON' une fois qu'il a été cliqué et que le compte à rebours commence
     }
   
-    // si les minutes et les secondes atteignent 0 tout est remis à plat et le bouton 'ON' redevient actif
+    //condition if/else -> si les minutes et les secondes atteignent 0 tout est remis à plat et le bouton 'ON' redevient actif
     if(tmMin==0 && tmScs==0) {
         startIt = 0;
-      document.getElementById('btnOn').removeAttribute('disabled'); /* .removeAttribute supprime la fonctionnalité du bouton */
+      document.getElementById('btnOn').removeAttribute('disabled'); /* .removeAttribute supprime la non-fonctionnalité du bouton 'ON' il redeviet activable */
   
       return false;
     }
     else {
-    // à chaque fois qu'une seconde touche à sa fin -> (enclenche la) diminution de la seconde suivante et après 59 secondes les minutes diminuent à leur tour
+    // Ou sinon à chaque fois qu'une seconde touche à sa fin -> (enclenche la) diminution de la seconde suivante et après 59 secondes les minutes diminuent à leur tour
       tmScs--;
       if(tmScs < 0) {
         if(tmMin > 0) {
