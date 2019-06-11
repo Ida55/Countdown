@@ -21,13 +21,13 @@ function timerOn() {
       document.getElementById('mins').value = tmMin;
       document.getElementById('scs').value = tmScs;
       startIt = 1;
-      document.getElementById('btnOn').setAttribute('disabled', 'disabled');     // désactive le bouton 'ON' une fois qu'il a été cliqué et que le compte à rebours commence
+      document.getElementById('btnOn').setAttribute('disabled', 'disabled');  // .setAttribute désactive le bouton 'ON' une fois qu'il a été cliqué et que le compte à rebours commence
     }
   
     //condition if/else -> si les minutes et les secondes atteignent 0 tout est remis à plat et le bouton 'ON' redevient actif
     if(tmMin==0 && tmScs==0) {
         startIt = 0;
-      document.getElementById('btnOn').removeAttribute('disabled'); /* .removeAttribute supprime la non-fonctionnalité du bouton 'ON' il redevient activable */
+      document.getElementById('btnOn').removeAttribute('disabled'); /*.removeAttribute supprime la non-fonctionnalité du bouton 'ON' il redevient activable */
   
       return false;
     }
