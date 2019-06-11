@@ -27,7 +27,7 @@ function timerOn() {
     //condition if/else -> si les minutes et les secondes atteignent 0 tout est remis à plat et le bouton 'ON' redevient actif
     if(tmMin==0 && tmScs==0) {
         startIt = 0;
-      document.getElementById('btnOn').removeAttribute('disabled'); /* .removeAttribute supprime la non-fonctionnalité du bouton 'ON' il redeviet activable */
+      document.getElementById('btnOn').removeAttribute('disabled'); /* .removeAttribute supprime la non-fonctionnalité du bouton 'ON' il redevient activable */
   
       return false;
     }
@@ -46,12 +46,12 @@ function timerOn() {
       }
     }
   
-    // les 2 première ligne sont celles qui permettent la visibilité du compte à rebours sur la page html
+    // les 2 premières lignes sont celles qui permettent la visibilité du compte à rebours sur la page html
     /* le setTimeout permet de faire fonctionner la fonction timerOn du dessus (et donc le mécanisme de décompte) 
-    toute les secondes sinon sans ça elle resterait bloquée */
+    toute les secondes (sinon sans ça il resterait bloqué) */
     document.getElementById('showmin').innerHTML = tmMin;
 
-    /* (Thanks Nicolas qui m'a créer cette astuce  qui agit de la même manière qu'une condition if/else et qui m'a  servie à rajouter un 0 devant les chiffres!) 
+    /* (Merci à Nicolas qui m'a créer ce shortcut qui agit de la même manière qu'une condition if/else et qui m'a  servie à rajouter un 0 devant les chiffres!) 
      -> Opérateur Ternaire : (condition si les secondes sont inférieures à 10) ? (-> execute this [ajoute un 0 aux secondes if condition is True]) 
      : ( -> execute that if condition is False [montre les secondes sans le 0]) -> condition if else */
     document.getElementById('showsec').innerHTML = tmScs < 10 ? '0' + tmScs : tmScs ;

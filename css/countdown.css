@@ -217,7 +217,7 @@ input {
     font-family: 'Orbitron', sans-serif;
   }
 
-/* Merci à Nicholas! margin: 0 auto -> astuce pour bloquer les chiffres et éviter qu'il se décalent lors du décompte width: 31% aide amieux centrer l'élément */
+/* Merci à Nicolas! margin: 0 auto -> astuce pour bloquer les chiffres et éviter qu'il se décalent lors du décompte width: 31% aide amieux centrer l'élément */
   .display-timer {
     width: 31%;
     margin: 0 auto;
