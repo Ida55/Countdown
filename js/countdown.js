@@ -3,7 +3,7 @@ var tmMin = 0;
 
 var tmScs = 0;
 
-var startIt = 0; /* variable représentant */
+var startIt = 0; /* variable représentant le compteur */
 
 function timerOn() {
     // si la variable startIt est à 0, et à condition que les champs des valeurs minutes et secondes sont présent dans la page web, and sets $startchr to 1
