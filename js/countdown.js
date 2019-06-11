@@ -1,7 +1,7 @@
 
-var tmMin = 0;
+var tmMin = 0; /* variable représentant les minutes */
 
-var tmScs = 0;
+var tmScs = 0; /* variable représentant les secondes */
 
 var startIt = 0; /* variable représentant le compteur */
 
