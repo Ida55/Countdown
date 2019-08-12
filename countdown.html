@@ -11,21 +11,22 @@
     <h1>My TIMER<br></h1>
 </div>
 <div id="subtitle">
-    <h4>In Minutes</h4>
+    <h4>Until it Ends there is No End</h4>
 </div>
     <form>
         <input type="text" id="mins" name="mins" value="0" size="3" maxlength="3"> <!-- données rentrées par l'utilisateur pour les minutes/ il ne pourra pas renseigné + de 3 chiffres -->
         <div id="minutes-label" class="choice">Minutes</div> <!-- Identification du cercle dédié aux minutes -->
         <input type="text" id="scs"  name="scs" value="0" size="2" maxlength="2"> <!-- données rentrées par l'utilisateur pour les secondes/ il ne pourra pas renseigné + de 2 chiffres -->
         <div id="seconds-label" class="choice">Seconds</div> <!-- Identification du cercle dédié aux secondes -->
-        <button type="button" id="btnOn" onclick="timerOn()">ON</button> 
+        <button type="button" id="btnOn" class="btn" onclick="timerOn()">ON</button> 
     </form>
     <div class="container">    <!-- div servant de conteneur pour les éléments du timer (minutes, secondes) eux même individuellement inséré dans une balise span -->
         <div class="display-timer"> <!-- div servant au compteur de rester droit -->
             <span id="showmin">00</span>:<span id="showsec">00</span>
         </div>    
     </div>
-        <!-- <button class="btnOff" type="button">OFF</button> -->
+        <button type="button" id="btnPause" class="btn" onclick="timerPause()">PAUSE</button>
+        <button type="button" id="btnOff" class="btn" onclick="timerOff()">OFF</button>
 </body>
 <script type="text/JavaScript" src="js/countdown.js"></script>
 </html>

@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Orbitron:400,900&display=swap'); /* police du compteur */
 
-@import url('https://fonts.googleapis.com/css?family=Caveat&display=swap'); /*vpolice du sous-titre */
+@import url('https://fonts.googleapis.com/css?family=Caveat&display=swap'); /*police du sous-titre */
 
 @import url('https://fonts.googleapis.com/css?family=Warnes&display=swap'); /* police des tags 'minutes' 'secondes' */
 
@@ -12,10 +12,10 @@
 
 /* margin: 0 & padding 0 & box-sizing: border-box -> pour ajuster la taille de l'écran et éviter les débordements*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* border: 3px solid red; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 3px solid red; */
 }
 
 /*  */
@@ -83,7 +83,8 @@
     bottom: 30px;
     color: white;
     font-family: 'Caveat', cursive;
-    font-size: 45px;
+    font-weight: bold;
+    font-size: 35px;
 }
 
 /* cercle minutes */
@@ -193,19 +194,24 @@ input {
       100%{background-color: #ff0066}
     }  
 
-/* bouton de démarrage du compteur 'ON' */
-  #btnOn {
+  .btn {
     position: absolute;
-    bottom: 350px;
-    left: 200px;
-    width: 80px;
-    height: 40px;
     border-radius: 40px;
     border: none;
     font-weight: bold;
     font-size: 20px;
     font-family: 'Fascinate', cursive;
     background-color: #7d00e8;
+    width: 80px;
+    height: 40px;
+  }
+
+/* bouton de démarrage du compteur 'ON' */
+  #btnOn {
+    bottom: 350px;
+    left: 200px;
+    
+    
   }
 
 /* balise div contenant les chiffre du compte à rebour (eux même placés grâce à des balises span) */
@@ -223,14 +229,16 @@ input {
     margin: 0 auto;
   }
 
-  /* .btnOff {
-    position: absolute;
+  #btnPause {
     bottom: 25px;
-    left: 725px;
+    left: 565px;
     width: 80px;
     height: 40px;
-    border-radius: 40px;
-    border: none;
-    font-weight: bold;
-    background-color: #7d00e8;
-  } */
+  }
+
+  #btnOff {
+    bottom: 25px;
+    left: 965px;
+    width: 80px;
+    height: 40px;
+  }
